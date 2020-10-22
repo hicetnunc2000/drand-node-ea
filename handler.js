@@ -4,7 +4,7 @@ const axios = require('axios')
 
 const customParams = {}
 
-const call_drand = (input, callback) => {
+const call_drand = async (input, callback) => {
 
     // initialize validator
 
@@ -13,12 +13,12 @@ const call_drand = (input, callback) => {
 
     // latest round from drand.love
 
-    axios.get('https://api.drand.sh/public/latest')
+    await axios.get('https://api.drand.sh/public/latest')
         .then(res => {
 
             callback(200, {
                 "jobRunID": jobRunId,
-                "data": web3.utils.fromAscii(res)
+                "data": web3.utils.fromAscii(res.data.randomness)
             })
         })
 
