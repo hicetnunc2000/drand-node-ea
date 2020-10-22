@@ -1,0 +1,17 @@
+{
+  "name": "drand-chainlink-ea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@crzypatchwork",
+  "license": "ISC",
+  "dependencies": {
+    "@chainlink/external-adapter": "^0.2.5",
+    "axios": "^0.20.0",
+    "serverless-plugin-include-dependencies": "^4.1.0",
+    "web3": "^1.3.0"
+  }
+}
