@@ -1,0 +1,21 @@
+{
+	"initiators": [
+		{
+			"type": "runlog",
+			"params": {
+				"address": "0x368db63510a023730b8c1fecdf5a8b6799270cec"
+			}
+		}
+	],
+	"tasks": [
+		{
+			"type": "drand_handler"
+		},
+		{
+			"type": "ethbytes32"
+		},
+		{
+			"type": "ethtx"
+		}
+	]
+}
