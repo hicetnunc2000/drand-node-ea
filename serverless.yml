@@ -1,5 +1,5 @@
 service: drand-ea
-#org: @hicetnunc2000
+#@hicetnunc2000
 
 frameworkVersion: '2.8.0'
 
@@ -15,11 +15,11 @@ provider:
   runtime: nodejs12.x
 
 functions:
-  drand_handler:
-    handler: handler.drand_handler
+  drand_ea:
+    handler: handler.drand_ea
     events:
       - http:
-          path: drand_handler
+          path: drand_ea
           method: post
           cors:
             origin: '*'

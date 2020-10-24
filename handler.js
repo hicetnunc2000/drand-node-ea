@@ -1,6 +1,6 @@
 const { Validator } = require('@chainlink/external-adapter')
-const web3 = require('web3')
 const axios = require('axios')
+const bigInt = require('big-integer')
 
 const customParams = {}
 
@@ -18,13 +18,13 @@ const call_drand = async (input, callback) => {
 
             callback(200, {
                 "jobRunID": jobRunId,
-                "data": web3.utils.fromAscii(res.data.randomness)
+                "data": bigInt(res.data.randomness, 16).toString()
             })
         })
 
 }
 
-module.exports.drand_handler = (event, context, callback) => {
+module.exports.drand_ea = (event, context, callback) => {
     call_drand(JSON.parse(event.body), (statusCode, data) => {
         callback(null, {
             statusCode: statusCode,
