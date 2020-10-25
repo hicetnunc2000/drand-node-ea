@@ -2,9 +2,13 @@ drand-node-ea
 
 chainlink external adapter which gets randomness from [drand.love](https://drand.love)
 
-it was build with sls framework 2.8.0, you must configure it, run `sls deploy`, get it's endpoint, build a bridge, add tasks and you'll have the jobid from this implementation
+it was build with sls framework 2.8.0, you must configure it, run `sls deploy`, get it's endpoint, build a bridge, add tasks and you'll have the jobid from this implementation (for such experiments look also testnet especifications in the repo)
 
-https://ipfs.io/ipfs/QmeiyUU1f5xGdXvvDhcCqxKt4PEBva83BoWUnSuhNtvVuh
+```drandramdoness.sol```
+mainnet address: 0xDA2Ed8129f72F6D3455127ebb40109449772B893<br />
+https://ipfs.io/ipfs/QmX5XLeuQDiZj2jqBXM5tTHi3dYhMEtNNDbQa7J5pvqvi1
+
+uint256: 15193941169270745378893100680725550593904155809811730811544783570068588680135
 
 ``` 
 {
@@ -29,3 +33,5 @@ https://ipfs.io/ipfs/QmeiyUU1f5xGdXvvDhcCqxKt4PEBva83BoWUnSuhNtvVuh
 	]
 }
 ```
+
+```MIT license```
